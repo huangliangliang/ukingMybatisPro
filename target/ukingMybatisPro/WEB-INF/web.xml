@@ -30,6 +30,16 @@
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 
+  <!-- 验证码 -->
+  <servlet>
+    <servlet-name>CodeMakerServlet</servlet-name>
+    <servlet-class>com.uking.mbpro.util.CodeMakerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CodeMakerServlet</servlet-name>
+    <url-pattern>/codeMaker</url-pattern>
+  </servlet-mapping>
+
   <!-- 字符编码过滤器 一定放在所有过滤器之前-->
   <filter>
     <filter-name>CharacterEncodingFilter</filter-name>

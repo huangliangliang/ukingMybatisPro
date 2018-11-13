@@ -3,8 +3,6 @@ package com.uking.mbpro.bean;
 import java.util.Date;
 
 public class UserInfo {
-
-
     private String id;
 
     private String name;
@@ -34,18 +32,6 @@ public class UserInfo {
     private Date modifiedTime;
 
     private Integer recordStatus;
-
-    public UserInfo(String id, String name) {
-        this.id = id;
-        this.name = name;
-    }
-
-    public UserInfo() {
-        super();
-    }
-
-
-
 
     public String getId() {
         return id;
@@ -165,27 +151,5 @@ public class UserInfo {
 
     public void setRecordStatus(Integer recordStatus) {
         this.recordStatus = recordStatus;
-    }
-
-
-    @Override
-    public String toString() {
-        return "UserInfo{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", employeeNo='" + employeeNo + '\'' +
-                ", employeeType='" + employeeType + '\'' +
-                ", employeeState=" + employeeState +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                ", telephone='" + telephone + '\'' +
-                ", departmentId='" + departmentId + '\'' +
-                ", departmentLeader=" + departmentLeader +
-                ", departmentIndex=" + departmentIndex +
-                ", tenantId='" + tenantId + '\'' +
-                ", createTime=" + createTime +
-                ", modifiedTime=" + modifiedTime +
-                ", recordStatus=" + recordStatus +
-                '}';
     }
 }

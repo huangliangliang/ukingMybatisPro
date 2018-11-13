@@ -31,7 +31,7 @@
         </javaModelGenerator>
 
         <!-- 指定sql映射文件生成的位置 -->
-        <sqlMapGenerator targetPackage="mapper"  targetProject="WEB-INF/">
+        <sqlMapGenerator targetPackage="mapper"  targetProject="/Users/huangl/framework/mybatis/ukingMybatisPro/src/main/webapp/WEB-INF">
             <property name="enableSubPackages" value="true" />
         </sqlMapGenerator>
 
@@ -41,18 +41,78 @@
         </javaClientGenerator>
 
         <!-- 指定每个表的生成策略 -->
-        <table tableName="auth_role_menu" domainObjectName="AuthRoleMenu"></table>
-        <table tableName="department" domainObjectName="Department"></table>
-        <table tableName="dictionary" domainObjectName="Dictionary"></table>
-        <table tableName="menu" domainObjectName="Menu"></table>
-        <table tableName="permission_detail" domainObjectName="PermissionDetail"></table>
-        <table tableName="permission_setting" domainObjectName="PermissionSetting"></table>
-        <table tableName="relationship_role_user" domainObjectName="RelationshipRole_user"></table>
-        <table tableName="role" domainObjectName="Role"></table>
-        <table tableName="role_group" domainObjectName="RoleGroup"></table>
-        <table tableName="tenant" domainObjectName="Tenant"></table>
-        <table tableName="token" domainObjectName="Token"></table>
-        <table tableName="user_info" domainObjectName="UserInfo"></table>
+        <table tableName="auth_role_menu" domainObjectName="AuthRoleMenu"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"></table>
+        <table tableName="department" domainObjectName="Department"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"></table>
+        <table tableName="dictionary" domainObjectName="Dictionary"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"></table>
+        <table tableName="menu" domainObjectName="Menu"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"></table>
+        <table tableName="permission_detail" domainObjectName="PermissionDetail"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"></table>
+        <table tableName="permission_setting" domainObjectName="PermissionSetting"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"></table>
+        <table tableName="relationship_role_user" domainObjectName="RelationshipRole_user"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"></table>
+        <table tableName="role" domainObjectName="Role"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"></table>
+        <table tableName="role_group" domainObjectName="RoleGroup"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"></table>
+        <table tableName="tenant" domainObjectName="Tenant"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"></table>
+        <table tableName="token" domainObjectName="Token"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"></table>
+        <table tableName="user_info" domainObjectName="UserInfo"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"></table>
 
     </context>
 </generatorConfiguration>

@@ -6,6 +6,8 @@ import com.uking.mbpro.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Map;
+
 @Service
 public class UserInfoServiceImpl implements UserInfoService {
 
@@ -19,7 +21,7 @@ public class UserInfoServiceImpl implements UserInfoService {
     }
 
     @Override
-    public UserInfo loginByEmployee(String employee_no) {
-        return userInfoMapper.loginByEmployee(employee_no);
+    public UserInfo loginByEmployee(Map<String, Object> paramMap) {
+        return userInfoMapper.loginByEmployee(paramMap);
     }
 }
