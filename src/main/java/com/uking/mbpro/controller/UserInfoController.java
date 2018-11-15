@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
@@ -73,7 +74,16 @@ public class UserInfoController {
      * 首页登录方法 -- 登录成功进行页面跳转
      */
     @RequestMapping(value = "/do")
-    public String login(Model model,String acc_name, String password, HttpSession session)throws Exception {
+    public String login(HttpServletRequest servletRequest,Model model, String acc_name, String password, String verifyCode ,HttpSession session)throws Exception {
+
+        //获取验证码
+        HttpSession se=  servletRequest.getSession();
+
+        String sessionyanz = se.getAttribute("codeNumbers").toString();
+        if(!verifyCode.toUpperCase().equals(sessionyanz.toUpperCase())){
+            return "/test";
+        }
+
 
         Map map = new HashMap();
         map.put("employeeNo",acc_name);
