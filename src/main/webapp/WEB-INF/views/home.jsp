@@ -24,7 +24,9 @@
         <div class="navbar-nav">
             <a class="navbar-brand" href="#">菜鸟教程</a>
         </div>
-
+        <div class="navbar-nav">
+            <a class="navbar-brand" href="#">菜鸟教程</a>
+        </div>
     </div>
 </nav>
 </body>
